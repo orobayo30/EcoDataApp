@@ -1,6 +1,6 @@
-# EcoData
+# ecodata
 
-Ecodata
+A new Flutter project.
 
 ## Getting Started
 
