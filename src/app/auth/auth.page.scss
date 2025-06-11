@@ -1,0 +1,63 @@
+ion-content {
+  --background: #f8f8f8; // Un fondo más claro para el contenido
+  display: flex; // Para centrar el contenido
+  justify-content: center; // Centrar horizontalmente
+  align-items: center; // Centrar verticalmente
+  text-align: center; // Centrar texto por defecto
+
+  .auth-container {
+    background: #ffffff; // Fondo blanco para la tarjeta
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Sombra sutil
+    max-width: 400px; // Ancho máximo para el formulario
+    width: 90%; // Ocupa el 90% del ancho disponible
+    margin: auto; // Centrar el contenedor
+    text-align: center; // Asegurar que el texto dentro esté centrado
+  }
+
+  .auth-logo {
+    width: 100px; // Tamaño del logo
+    height: auto;
+    margin-bottom: 20px; // Espacio debajo del logo
+  }
+
+  h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: #666;
+    margin-bottom: 25px;
+    font-size: 0.9em;
+  }
+
+  ion-list {
+    background: transparent; // Fondo transparente para la lista
+    margin-bottom: 20px; // Espacio debajo de la lista de inputs
+  }
+
+  ion-item {
+    --background: #f0f0f0; // Fondo para cada input item
+    --highlight-background: transparent;
+    --border-radius: 8px;
+    margin-bottom: 15px; // Espacio entre inputs
+    border-radius: 8px;
+  }
+
+  ion-input {
+    --padding-start: 15px; // Relleno dentro del input
+  }
+
+  ion-button {
+    --border-radius: 8px;
+    font-weight: bold;
+  }
+
+  ion-button[fill="clear"] {
+    font-size: 0.85em;
+    color: #666; // Color para los botones de texto
+  }
+}

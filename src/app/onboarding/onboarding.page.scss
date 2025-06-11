@@ -1,0 +1,47 @@
+.onboarding-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; // Asegura que el contenedor ocupe toda la altura de la pantalla
+  text-align: center;
+  padding: 20px;
+
+  img { // Usamos 'img' porque en el HTML es una etiqueta <img>
+    width: 80%; // Ajusta el tamaño de la imagen
+    max-width: 300px; // Limita el tamaño máximo
+    margin-bottom: 30px; // Espacio debajo de la imagen
+  }
+
+  h1 {
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333; // Color oscuro para el texto
+  }
+
+  // El p para el texto descriptivo en inicio.jpg no está explícito en el HTML
+  // Si añadieras un <p> en el HTML, este estilo lo aplicaría.
+  // Por ahora, solo tenemos el h1 y el botón.
+  p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 40px;
+  }
+
+  ion-button {
+    width: 90%; // Ocupa casi todo el ancho
+    max-width: 300px; // Limita el ancho máximo del botón
+    --background: #8BC34A; // Un verde claro similar al de la imagen
+    --background-activated: #7CB342; // Un poco más oscuro al presionar
+    --border-radius: 25px; // Bordes redondeados
+    height: 50px; // Altura del botón
+    font-size: 1.1em;
+    text-transform: none; // Evita que el texto sea todo mayúsculas
+  }
+}
+
+// Asegúrate de que el fondo de la página sea blanco si es necesario
+ion-content {
+  --background: #fff;
+}
