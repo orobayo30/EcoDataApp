@@ -1,0 +1,115 @@
+ion-content {
+--background: #ffffff; // Un fondo más claro para el contenido
+  // display: flex; // Para centrar el contenido
+  // justify-content: center; // Centrar horizontalmente
+  // align-items: center; // Centrar verticalmente
+  // text-align: center; // Centrar texto por defecto
+
+  .habits-container {
+    background: #ffffff; // Fondo blanco para la tarjeta
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Sombra sutil
+    max-width: 400px; // Ancho máximo para el formulario
+    width: 90%; // Ocupa el 90% del ancho disponible
+    margin: auto; // Centrar el contenedor
+    text-align: center; // Asegurar que el texto dentro esté centrado
+  }
+
+  h1 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+
+  h5{
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-align: left;
+  }
+
+  p{
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+
+
+  .my-icon {
+  font-size: 40px;
+  color: #9DBF84;
+  margin-right: 10px;
+}
+
+/* En habits.page.scss o el archivo de estilos correspondiente */
+.round-bg {
+  background: #EEF0FC;      /* Color de fondo */
+  border-radius: 50%;       /* Hace el fondo redondo */
+  padding: 12px;            /* Espacio alrededor del icono */
+  color: #9DBF84;              /* Color del icono */
+  font-size: 28px;          /* Tamaño del icono */
+  display: inline-flex;     /* Centra el icono vertical y horizontalmente */
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  background: #fff;                  /* Fondo blanco */
+  border: 1px solid #ccc;            /* Bordes visibles */
+  border-radius: 8px;                /* Bordes redondeados (opcional) */
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Sombra suave */
+  padding: 10px;  
+  display: flex;
+  justify-content: left;   /* Centra las columnas horizontalmente */
+  align-items: center;       /* Centra el contenido verticalmente */
+  gap: 16px;                 /* Espacio entre columnas */
+}
+
+.col {
+  flex: 1;                   /* Todas las columnas del mismo ancho */
+  text-align: center;        /* Centra el texto dentro de la columna */
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.col-center {
+  flex: 2; /* La columna del centro ocupa el doble de espacio */
+}
+
+/* En habits.page.scss */
+ion-toggle.toggle-gris {
+  --background: #bdbdbd;           /* Gris cuando está desactivado */
+  --background-checked: #4caf50;   /* (Opcional) Color cuando está activado */
+  --handle-background: #fff;       /* Color del círculo */
+  --handle-background-checked: #fff;
+}
+
+.texto-negro {
+  color: #000 !important; /* Color del texto */
+}
+
+.boton-gris {
+  --background: #cccccc;   /* Fondo gris */
+  --color: #000;           /* (Opcional) Texto negro */
+  font-weight: bold;
+}
+
+.icono-circular {
+  background: #cccccc;           /* Fondo blanco o el color que prefieras */
+  border: 2px solid #919191;  /* Color y grosor del borde */
+  border-radius: 50%;         /* Hace el borde circular */
+  padding: 6px;              /* Espacio alrededor del icono */
+  color: #919191;             /* Color del icono */
+  font-size: 14px;            /* Tamaño del icono */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+
+}

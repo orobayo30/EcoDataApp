@@ -1,0 +1,46 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>habits</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding ion-text-center">
+
+  <div class="habits-container">
+    <h1><b>Habit Tracking</b></h1>
+    
+    <div *ngFor="let div of divs; let i = index" class="row">
+      <div class="col">
+          <ion-icon class="my-icon round-bg" name="home-outline"></ion-icon>
+        </div>
+        <div class="col col-center">
+          <ng-container *ngIf="!div.editando; else editarCampos">
+          <h5 (click)="activarEdicion(i)">{{ div.titulo }}</h5>
+          <p (click)="activarEdicion(i)">{{ div.descripcion }}</p>
+        </ng-container>
+        <ng-template #editarCampos>
+          <ion-input class="texto-negro" [(ngModel)]="div.titulo"></ion-input>
+          <ion-textarea class="texto-negro" [(ngModel)]="div.descripcion"></ion-textarea>
+          <ion-button size="small" (click)="guardarEdicion(i)">Guardar</ion-button>
+        </ng-template>
+        </div>
+        <div class="col">
+          <ion-toggle class="toggle-gris" [(ngModel)]="div.habitActive"></ion-toggle>
+        </div>
+    </div>
+    
+    <ion-button class="boton-gris" (click)="agregarDiv()">
+      <ion-icon slot="start" class="icono-circular" name="add"></ion-icon>
+      Agregar New Habit
+    </ion-button>
+  
+  </div>
+  
+</ion-content>
+
+
+
+
+
+
+
