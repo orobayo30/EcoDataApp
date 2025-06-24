@@ -1,0 +1,122 @@
+ion-header {
+  ion-title {
+    text-align: center; // Centrar el título
+    color: #000000; // Color del título
+  }
+}
+ion-content {
+  --background: #f8f8f8; // Un fondo más oscuro para el contenido
+  display: flex; // Para centrar el contenido
+  justify-content: center; // Centrar horizontalmente
+  align-items: center; // Centrar verticalmente
+  text-align: center; // Centrar texto por defecto
+
+  .home-container{
+    padding: 16px; // Espacio alrededor del contenido
+    display: flex; // Usar flexbox para el layout
+    flex-direction: column; // colocar los elementos de manera vertical
+    gap: 16px; // Espacio entre los elementos
+  }
+
+  .footprint{
+    margin: 0; // Reinicia el margin por defecto de ion-card para que `gap` funcione
+    border-radius: 12px; // Bordes más redondeados para un aspecto moderno
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Una sombra sutil para dar profundidad
+    background: var(--ion-color-light); // Usar una variable de color de Ionic o un color fijo
+    background: #f9f9f9
+  }
+  h2{
+    font-size: 1.2em; // Tamaño del título
+    color: #847b7b; // Color del título
+    margin-bottom: 10px; // Espacio debajo del título
+    font-weight: bold; // Negrita para el título
+  }
+  .value{
+    color: #b1db82;
+    font-size: 2.5em; // Tamaño del número
+    font-weight: bold; // Negrita para el número
+  }
+  .unit{
+    color: #847b7b; // Color del texto de la unidad
+    font-size: 1.0em; // Tamaño del texto de la unidad
+    margin-left: 5px; // Espacio entre el número y la unidad
+  }
+  .arrow-down{
+    color: #847b7b; // Color de la flecha hacia abajo
+    font-size: 1.0em; // Tamaño de la flecha hacia abajo
+    margin-left: 5px; // Espacio entre el número y la flecha
+  }
+  .porcentaje{
+    color: #847b7b; // Color del porcentaje
+    font-size: 1.0em; // Tamaño del porcentaje  
+  }
+
+  .progress-container{
+    margin: 0; // Reinicia el margin por defecto de ion-card para que `gap` funcione
+    border-radius: 12px; // Bordes más redondeados para un aspecto moderno
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Una sombra sutil para dar profundidad
+    background: var(--ion-color-light); // Usar una variable de color de Ionic o un color fijo
+    background: #f9f9f9
+  }
+
+  ion-progress-bar {
+    --background: #e0e0e0; // Color de fondo de la barra de progreso
+    --progress-background: #b1db82; // Color de la barra de progreso
+    height: 15px; // Altura de la barra de progreso
+    border-radius: 10px; // Bordes redondeados para la barra de progreso
+  }
+  .percentage-text{
+    font-size: 20px; // Tamaño del texto del porcentaje
+    font-weight: bold; // Negrita para el texto del porcentaje
+    color: #b1db82;
+  }
+  .goal{
+    display : flex; // Usar flexbox para el layout
+    justify-content: space-between  ;
+    color: #847b7b;
+    font-size: 0.9em; // Tamaño del texto de la meta
+  }
+
+  .ecotips-container{
+     margin: 0; // Reinicia el margin por defecto de ion-card para que `gap` funcione
+    border-radius: 12px; // Bordes más redondeados para un aspecto moderno
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Una sombra sutil para dar profundidad
+    background: var(--ion-color-light); // Usar una variable de color de Ionic o un color fijo
+    background: #f9f9f9;
+    align-items: center;
+  }
+  
+  .tip-box{
+    display: flex; // Usar flexbox para el layout
+    flex-direction: column; // Colocar los elementos de manera vertical
+    align-items: center; // Centrar los elementos horizontalmente
+    gap: 12px; // Espacio entre los elementos
+  }
+
+  ion-card{
+    aspect-ratio: 1 / 1;
+    width: 300px; // Ancho del ion-card
+    height: 100px; // Alto del ion-card
+    margin: 0 auto; // Centrar el ion-card
+    display: flex; // Usar flexbox para el layout
+    align-items: center;
+    justify-content: center;
+    --background: #745c4c; // Color de fondo del ion-card
+    color: #ffffff; // Color del texto del ion-card
+  }
+
+  .tips-box{
+    display: flex; // Usar flexbox para el layout
+    flex-direction: column; // Colocar los elementos de manera vertical
+    align-items: center; // Centrar los elementos horizontalmente
+    gap: 12px; // Espacio entre los elementos
+  }
+
+  .more-tips-button{
+    display: flex; // Usar flexbox para el layout
+    justify-content: center; // Centrar el botón
+    width: 35%;
+    --background: #b1db82; // Color de fondo del botón
+    --color: #000000; // Color del texto del botón
+  }
+}

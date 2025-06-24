@@ -52,12 +52,15 @@ ion-content {
   }
 
   ion-button {
+    --background: #b1db82;
     --border-radius: 8px;
+    --background-activated: #749055; // Un poco más oscuro al presionar
     font-weight: bold;
+    color: #000; // Color del texto del botón
   }
 
   ion-button[fill="clear"] {
     font-size: 0.85em;
-    color: #666; // Color para los botones de texto
+    color: #000000; // Color para los botones de texto
   }
 }
