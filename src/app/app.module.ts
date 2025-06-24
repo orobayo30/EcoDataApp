@@ -6,7 +6,6 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HabitsPage } from './habits/habits.page';
 
 @NgModule({
   declarations: [AppComponent],
